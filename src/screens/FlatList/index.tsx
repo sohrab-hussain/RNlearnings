@@ -50,3 +50,19 @@ export function OptimisedFlatListScreen() {
         />
     </View>
 }
+
+/*
+* Optimizing FlatList in React Native involves configuring its props and component design to improve scroll performance,
+* reduce re-renders, and manage memory efficiently, especially for large lists.
+*
+*   Key Optimization Techniques for FlatList
+
+    1. Use keyExtractor: Specify a unique key for each item for efficient re-rendering.
+    2. Avoid inline renderItem functions: Memoize the renderItem function using useCallback to avoid unnecessary re-creation.
+    3. Memoize list items: Wrap list item components with React.memo to prevent re-renders unless props change.
+    4. Use getItemLayout: Provide fixed item height/width and offset if items have uniform size to avoid costly dynamic layout calculations.
+    5. Control rendering with maxToRenderPerBatch and initialNumToRender: These props control how many items render initially and per batch to balance responsiveness and fill rate.
+    6. Remove off-screen items: Use removeClippedSubviews to unmount off-screen components to save memory (with some trade-offs).
+    7. Use lightweight components: Keep list items simple without deep nesting or heavy elements for faster render.
+
+* */
