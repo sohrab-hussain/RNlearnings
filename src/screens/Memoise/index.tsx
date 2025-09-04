@@ -4,8 +4,7 @@ import {View} from "react-native";
 import FactorialCalculator from "./FactoriaItem.tsx";
 import CallBackExample from "./CallBackItem.tsx";
 
-export
-function MemoisationScreen({route}) {
+export function MemoisationScreen({route}) {
     const navigation = useNavigation();
 
     return <View style={{ padding: 15 }}>

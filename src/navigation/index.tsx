@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import {MemoisationScreen} from "../screens/Memoise";
 import {createStackNavigator} from "@react-navigation/stack";
 import {HomeScreen} from "../screens/Home";
+import {OptimisedFlatListScreen} from "../screens/FlatList";
 
 const Tab = createBottomTabNavigator();
 
@@ -12,6 +13,7 @@ export function HomeTabs() {
             <Stack.Screen name="Home" component={HomeScreen}  />
             <Stack.Screen name="Profile" component={ProfileScreen} />
             <Stack.Screen name="Memoisation" component={MemoisationScreen} />
+            <Stack.Screen name="OptimisedFlatList" component={OptimisedFlatListScreen} />
         </Stack.Navigator>
     );
 }

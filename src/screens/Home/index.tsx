@@ -11,6 +11,12 @@ export function HomeScreen() {
         switch (index) {
             case 0:
                 navigation.navigate("Memoisation");
+                break;
+            case 1:
+                navigation.navigate("OptimisedFlatList");
+                break;
+            default:
+                break;
         }
     }, [navigation]);
 
