@@ -3,7 +3,8 @@ import {FlatList, Text, TouchableOpacity, View} from "react-native";
 import {useCallback} from "react";
 
 const listItems = [{name: "Memoisation", description: "Understanding causes of performance issues such as excessive re-renders, heavy JavaScript thread use, large images, and how to optimize using tools like React.memo, useMemo, useCallback, InteractionManager, FlatList, and profiling with Flipper or React DevTools"},
-    {name: "Optimizing FlatList", description: "Optimizing FlatList in React Native involves configuring its props and component design to improve scroll performance, reduce re-renders, and manage memory efficiently, especially for large lists."}];
+    {name: "Optimizing FlatList", description: "Optimizing FlatList in React Native involves configuring its props and component design to improve scroll performance, reduce re-renders, and manage memory efficiently, especially for large lists."},
+    {name: "Context API", description: "Context API is a built-in feature of React (and React Native) that provides a way to share global state across multiple components without prop drilling."}];
 export function HomeScreen() {
     const navigation = useNavigation();
 
@@ -14,6 +15,9 @@ export function HomeScreen() {
                 break;
             case 1:
                 navigation.navigate("OptimisedFlatList");
+                break;
+            case 2:
+                navigation.navigate("ContextAPI");
                 break;
             default:
                 break;
